@@ -1,23 +1,121 @@
+/* ==============================
+   General Styles
+============================== */
 body {
-    padding-top: 60px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #212529;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-    margin-top: 30px;
+/* ==============================
+   Links
+============================== */
+a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #005fa3;
+}
+
+/* ==============================
+   Return Link
+============================== */
+.return-link {
+    margin: 20px;
+}
+
+.return-link a {
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    border: 1px solid #b3d1f2;
+}
+
+/* ==============================
+   Sections
+============================== */
+.section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+.section h1, .section h2 {
+    color: #004080;
     margin-bottom: 15px;
 }
 
-img {
-    margin: 15px 0;
+/* Paragraphs inside sections */
+.section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ==============================
+   Images
+============================== */
+.image-section, img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.btn {
-    text-decoration: none;
+/* ==============================
+   Map areas hover effect
+============================== */
+area {
+    cursor: pointer;
 }
 
+/* ==============================
+   Preformatted blocks (optional)
+============================== */
+pre {
+    white-space: pre-wrap; /* Wrap long lines */
+    font-family: inherit;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-left: 4px solid #0077cc;
+    border-radius: 5px;
+    overflow-x: auto;
+}
 
+/* ==============================
+   Responsive adjustments
+============================== */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .return-link {
+        margin: 15px;
+    }
+
+    .section h1 {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 15px;
+    }
+}
